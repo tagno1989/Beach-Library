@@ -1,0 +1,114 @@
+/* dev styles */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+body {
+    background-image: url(./downloads/t_a5d052b669104538aa85695716553b06_name_FFFC1B444DFF459E83A87CDFB32C2365.avif);
+    background-size: cover;
+    
+}
+
+/* set up */
+
+.title {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    padding: 6px;
+}
+
+.foot-text {
+    text-align: center;
+    padding: 6px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 16px;
+}
+button {
+    background-color: rgba(222, 184, 135, 0.675);
+    
+}
+
+/* modal styles */
+
+dialog {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(240, 248, 255, 0.700);
+    padding: 12px;
+}
+dialog::backdrop {
+    background-color: rgba(222, 184, 135, 0.155);
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+/* form */
+
+form {
+    display: grid;
+    gap: 6px;
+}
+
+/* books */
+
+.book-container {
+    background-color: rgba(222, 184, 135, 0.675);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* text styles */
+
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: 700;
+    color: darkblue;
+    font-style: italic;
+}
+.buttons {
+    font-size: 24px;
+    font-weight: 700;
+    color: darkblue;
+}
+
+dialog > p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.book {
+    line-height: 1.25;
+    font-size: 18px;
+}
