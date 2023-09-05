@@ -40,7 +40,7 @@ button {
     
 }
 
-/* modal styles */
+/* dialog styles */
 
 dialog {
     flex-direction: column;
@@ -60,13 +60,21 @@ dialog::backdrop {
     justify-content: center;
     gap: 12px;
 }
-/* form */
+/* dialog form */
 
 form {
     display: grid;
     gap: 6px;
 }
-
+input:valid {
+    border: 2px solid black;
+}
+input:invalid {
+    border: 2px dashed rgba(255, 0, 0, 0.700);
+}
+input:invalid:required {
+    background-image: linear-gradient(to right, rgba(222, 184, 135, .4), rgba(0, 0, 0, .1) );
+}
 /* books */
 
 .book-container {
@@ -77,12 +85,11 @@ form {
 }
 
 .book {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-self: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 4px;
 }
-
 
 /* text styles */
 

@@ -1,5 +1,3 @@
-
-
 let myLibrary = [];
 
 class Book{
@@ -114,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     library.displayBooks();
 });
 
-// modal
+// modal/dialog
 
 const openModal = document.querySelector("[data-open-modal]");
 const closeModal = document.querySelector("[data-close-modal]");
